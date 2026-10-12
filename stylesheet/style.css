@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#F5F0E6;
+    --red:#7E0C00;
+    --button:#FF4F3E;
+    --dark:#000000;
+}
+
+body{
+    background:#fff;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height:90px;
+    background:var(--bg);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 48px;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.logo img{
+    height:52px;
+    width:auto;
+    display:block;
+}
+
+/* MENU */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:55px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#000;
+
+    font-family:"Barlow Condensed", sans-serif;
+    font-size:18px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+.nav-links a:hover{
+    color:var(--red);
+}
+
+/* HØJRE SIDE */
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* STØT KNAP */
+
+.support-btn{
+    border:none;
+    background:#FF4F3E;
+
+    padding:12px 24px;
+
+    cursor:pointer;
+
+    font-family:"Barlow Condensed", sans-serif;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+/* DK / EN */
+
+.language-switch{
+    font-family:"Barlow Condensed", sans-serif;
+    font-size:12px;
+    font-weight:600;
+
+    color:#555;
+}
+
+/* HERO */
+
+.hero{
+    height:720px;
+    display:flex;
+    width:100%;
+    background:#fff;
+}
+
+.hero-content{
+    width:40%;
+    background:#7E0C00;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 60px 60px 90px;
+}
+
+.hero-text{
+    max-width:430px;
+    color:#fff;
+}
+
+.hero-text h1{
+    font-family:"Barlow Condensed", sans-serif;
+    font-size:54px;
+    line-height:0.96;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:24px;
+}
+
+.hero-text p{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:18px;
+    line-height:1.6;
+    color:#fff;
+}
+
+.hero-image-wrap{
+    flex:1;
+    background:#f3f3f3;
+    overflow:hidden;
+}
+
+.hero-image-wrap img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
+@media (max-width: 900px){
+    .hero{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:50px 30px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+}
