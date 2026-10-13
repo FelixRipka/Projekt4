@@ -113,12 +113,15 @@ body{
     width:40%;
     background:#7E0C00;
     display:flex;
-    align-items:center;
+    align-items:stretch;
     justify-content:center;
     padding:60px 60px 60px 90px;
 }
 
 .hero-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     max-width:430px;
     color:#fff;
 }
@@ -129,7 +132,7 @@ body{
     line-height:0.96;
     font-weight:600;
     text-transform:uppercase;
-    margin-bottom:24px;
+    margin-bottom:32px;
 }
 
 .hero-text p{
@@ -160,6 +163,7 @@ body{
 
     .hero-content{
         width:100%;
+        min-height:420px;
         padding:50px 30px;
     }
 
