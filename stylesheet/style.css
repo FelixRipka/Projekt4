@@ -63,7 +63,8 @@ body{
 }
 
 .nav-links a:hover{
-    color:var(--red);
+    text-decoration-line: underline;
+    color: red;
 }
 
 /* HØJRE SIDE */
