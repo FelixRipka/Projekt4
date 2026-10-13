@@ -229,6 +229,11 @@ ul {
     padding:0 48px;
 }
 
+.footer-navn-item{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 900px){
     .hero{
         flex-direction:column;
