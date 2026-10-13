@@ -64,7 +64,7 @@ body{
 
 .nav-links a:hover{
     text-decoration-line: underline;
-    color: red;
+    color: var(--button);
 }
 
 /* HØJRE SIDE */
