@@ -177,10 +177,14 @@ body{
     
 }
 
-.content-section p{
+.content-section p, li{
     font-size:18px;
     line-height:1.6;
     
+}
+
+ul {
+    padding-left: 25px;
 }
 
 @media (max-width: 900px){
