@@ -196,6 +196,119 @@ h3{
     
 }
 
+.issue-carousel{
+    background:#fff;
+    padding:72px 48px;
+}
+
+.issue-carousel-inner{
+    max-width:1440px;
+    margin:0 auto;
+}
+
+.carousel-shell{
+    display:grid;
+    grid-template-columns:48px minmax(0, 1fr) 48px;
+    align-items:center;
+    gap:20px;
+}
+
+.carousel-viewport{
+    min-width:0;
+    overflow:hidden;
+}
+
+.carousel-track{
+    display:flex;
+    gap:24px;
+    width:calc(166.666667% + 16px);
+    transition:transform 350ms ease;
+}
+
+.carousel-card{
+    display:flex;
+    flex:0 0 calc((100% - 96px) / 5);
+    flex-direction:column;
+    min-width:0;
+    background:var(--bg);
+}
+
+.carousel-card > img{
+    display:block;
+    width:calc(100% - 32px);
+    aspect-ratio:5 / 4;
+    margin:16px auto 0;
+    object-fit:cover;
+}
+
+.carousel-card-content{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:24px;
+    container-type:inline-size;
+}
+
+.carousel-card h2{
+    margin-bottom:18px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:28px;
+    line-height:1.1;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.carousel-card--transport h2{
+    font-size:clamp(12px, 8cqi, 22px);
+}
+
+.carousel-card p{
+    margin-bottom:28px;
+    font-size:16px;
+    line-height:1.4;
+}
+
+.carousel-card-link{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    margin-top:auto;
+    color:#000;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.carousel-card-link span{
+    font-family:Arial, sans-serif;
+    font-size:28px;
+    line-height:1;
+}
+
+.carousel-card-link:hover{
+    color:var(--red);
+}
+
+.carousel-arrow{
+    display:grid;
+    width:48px;
+    aspect-ratio:1;
+    place-items:center;
+    border:1px solid #000;
+    border-radius:50%;
+    background:#fff;
+    color:#000;
+    cursor:pointer;
+    font-size:28px;
+    line-height:1;
+}
+
+.carousel-arrow:hover{
+    background:var(--bg);
+}
+
 ul {
     padding-left: 25px;
 }
@@ -361,5 +474,47 @@ ul {
 
     .content-section{
         padding:50px 30px;
+    }
+
+    .issue-carousel{
+        padding:56px 24px;
+    }
+
+    .carousel-shell{
+        grid-template-columns:40px minmax(0, 1fr) 40px;
+        gap:12px;
+    }
+
+    .carousel-arrow{
+        width:40px;
+        font-size:24px;
+    }
+
+    .carousel-track{
+        width:calc(250% + 36px);
+    }
+}
+
+@media (max-width: 600px){
+    .issue-carousel{
+        padding:40px 16px;
+    }
+
+    .carousel-shell{
+        grid-template-columns:32px minmax(0, 1fr) 32px;
+        gap:8px;
+    }
+
+    .carousel-arrow{
+        width:32px;
+        font-size:20px;
+    }
+
+    .carousel-track{
+        width:calc(500% + 96px);
+    }
+
+    .carousel-card-content{
+        padding:20px;
     }
 }
