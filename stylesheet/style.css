@@ -64,7 +64,7 @@ body{
 
 .nav-links a:hover{
     text-decoration-line: underline;
-    color: var(--button);
+    text-decoration-color: var(--button);
 }
 
 /* HØJRE SIDE */
@@ -171,11 +171,13 @@ body{
     line-height:1.1;
     font-weight:600;
     margin-bottom:20px;
+    margin-left: 15%;
 }
 
 .content-section p{
     font-size:18px;
     line-height:1.6;
+    margin-left: 15%;
 }
 
 @media (max-width: 900px){
