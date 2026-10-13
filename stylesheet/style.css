@@ -158,7 +158,8 @@ body{
 
 .content-section{
     background:#F5F0E6;
-    padding:80px 90px;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .content-section-inner{
@@ -171,13 +172,13 @@ body{
     line-height:1.1;
     font-weight:600;
     margin-bottom:20px;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 .content-section p{
     font-size:18px;
     line-height:1.6;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 @media (max-width: 900px){
