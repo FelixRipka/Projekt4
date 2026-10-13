@@ -194,6 +194,20 @@ ul {
     padding-left: 25px;
 }
 
+.footer-top{
+    height:400px;
+    background: var(--footer-top);
+    z-index: 999;
+    width: 100%;
+
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 48px;
+}
+
 @media (max-width: 900px){
     .hero{
         flex-direction:column;
