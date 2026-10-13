@@ -163,7 +163,9 @@ body{
 }
 
 .content-section-inner{
-    max-width:900px;
+    max-width:1040px;
+    margin-left: 15%;
+        
 }
 
 .content-section h1{
@@ -172,13 +174,13 @@ body{
     line-height:1.1;
     font-weight:600;
     margin-bottom:20px;
-    margin-left: 25%;
+    
 }
 
 .content-section p{
     font-size:18px;
     line-height:1.6;
-    margin-left: 25%;
+    
 }
 
 @media (max-width: 900px){
