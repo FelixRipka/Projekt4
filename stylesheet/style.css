@@ -208,6 +208,13 @@ ul {
     padding:0 48px;
 }
 
+.footer-emblem{
+    display:block;
+    width:200px;
+    height:auto;
+    margin-bottom:24px;
+}
+
 .footer{
     height:600px;
     background: var(--red);
