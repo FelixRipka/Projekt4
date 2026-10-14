@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/slide-drawer.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -26,7 +28,7 @@
                 <li><a href="#">Vær med</a></li>
             </ul>
         </nav>
-
+        
         <div class="nav-actions">
             <button class="support-btn" type="button">STØT</button>
             <span class="language-switch">DK / EN</span>
@@ -49,6 +51,34 @@
             <div class="content-section-inner">
                 <h1>Mærkesager for dyr i industrilandbruget</h1>
                 <p>Dyr i industrilandbruget udsættes dagligt for urimelig smerte, angst og lidelse og oplever meget få positive oplevelser og glæde. Det er i strid med Dyrevelfærdsloven. Denne dyrevelfærdskrise er tæt forbundet med krisen for klima og biodiversitet. Derfor arbejder Dyrenes Beskyttelse for nedenstående mærkesager.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="support-drawer" id="supportDrawer">
+                <div class="support-drawer__inner">
+                    <button class="support-drawer__close" id="supportDrawerClose">&#10799;</button>
+
+                    <h2>Hvordan vil du støtte?</h2>
+                    <p>poop</p>
+
+                    <form>
+                        <label>Navn:</label>
+                        <input type="text" />
+
+                        <label>Telefon:</label>
+                        <input type="text" />
+
+                        <label>E-mail:</label>
+                        <input type="email" />
+
+                        <label>Vejnavn og husnummer:</label>
+                        <input type="text" />
+
+                        <button class="support-drawer__submit">BESTIL SALGSVURDERING</button>
+                    </form>
+
+                </div>
             </div>
         </section>
 
@@ -174,11 +204,7 @@ skal være uanmeldt og risikobaseret.</p>
                 <p class="footer-link">+45 33 28 70 00</p>
                 <p class="footer-link">db@dyrenesbeskyttelse.dk</p>
                 <br>
-                <div class="WFA-inline">
-                    <p>Vi er stolt medlem af</p>
-                    <p>&nbsp;</p>
-                    <p class="footer-link">World Federation for Animals</p>
-                </div>
+                <p>Vi er stolt medlem af <span class="p footer-link">World Federation for Animals</span></p>
                 <br>
                 <div class="socials-logo">
                     <img src="images/linkedin-logo.png" alt="LinkedIn Logo">
@@ -189,6 +215,5 @@ skal være uanmeldt og risikobaseret.</p>
             </div>
         </footer>
     </main>
-    <script src="scripts/carousel.js" defer></script>
 </body>
 </html>

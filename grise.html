@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dyrenes Beskyttelse</title>
 
+    <link rel="stylesheet" href="stylesheet/grise.css">
     <link rel="stylesheet" href="stylesheet/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    
+    <script src="scripts/slide-drawer.js" defer></script>
 </head>
+
 <body>
     <header class="navbar">
         <a href="#" class="logo" aria-label="Forside">
@@ -38,13 +42,13 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>GRISE I INDUSTRILANDBRUGET</h1>
-                    <p>Hvis du har set en gris øjnene, er du ikke i tvivl. 
-                    Bag blikket er behov, bevidsthed og en begavelse, som er meget lig din egen.
-                    Men det er de færreste forundt at møde grisens blik. Selv om 
-                    der hvert år fødes 40 millioner grise i Danmark, ser vi dem ikke, 
-                    fordi 98 procent af dem lever og dør i industriens anlæg.
-                    Dyrenes Beskyttelse arbejder for at gøre grisene synlige og at få flere og flere 
-                    danskere til at tale højt om det liv, som vi giver grisene.</p>
+                    <p>
+                        Hvis du har set en gris øjnene, er du ikke i tvivl. Bag blikket er behov, bevidsthed og en begavelse, som er meget lig din egen.
+                        <br><br>
+                        Men det er de færreste forundt at møde grisens blik. Selv om der hvert år fødes 40 millioner grise i Danmark, ser vi dem ikke, fordi 98 procent af dem lever og dør i industriens anlæg.
+                        <br><br>
+                        Dyrenes Beskyttelse arbejder for at gøre grisene synlige og at få flere og flere danskere til at tale højt om det liv, som vi giver grisene.
+                    </p>
         
                 </div>
             </div>
@@ -52,12 +56,66 @@
                 <img src="images/glade-grise-udenfor.jpg" alt="glade grise udenfor">
             </div>
         </section>
+
         <section class="content-section">
             <div class="content-section-inner">
                 <h1>Dumme svin findes ikke</h1>
                 <p>Grise er kloge og sociale dyr, men i dansk industrilandbrug fastspændes søer, 24.000 pattegrise dør hver dag, og grisene lever tæt pakket uden adgang til det fri. Den nye regering har lovet et opgør med industriens dårlige forhold, men grisene venter stadig.  Hjælp os med at holde dem fast på løftet.</p>
             </div>
+            <br>
+            <button class="sign-btn" type="button">SKRIV UNDER FOR GRISENE HER</button>
         </section>
+
+        <section>
+            <div class="support-drawer" id="supportDrawer">
+                <div class="support-drawer__inner">
+                    <button class="support-drawer__close" id="supportDrawerClose">&#10799;</button>
+
+                    <h2>Hvordan vil du støtte?</h2>
+                    <p>poop</p>
+
+                    <form>
+                        <label>Navn:</label>
+                        <input type="text" />
+
+                        <label>Telefon:</label>
+                        <input type="text" />
+
+                        <label>E-mail:</label>
+                        <input type="email" />
+
+                        <label>Vejnavn og husnummer:</label>
+                        <input type="text" />
+
+                        <button class="support-drawer__submit">BESTIL SALGSVURDERING</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sign-drawer" id="signDrawer">
+                <div class="sign-drawer__inner">
+                    <button class="sign-drawer__close" id="signDrawerClose">&#10799;</button>
+
+                    <h2>GRIS</h2>
+                    <p>GRIS</p>
+
+                    <form>
+                        <input type="text" placeholder="Fornavn"/>
+
+                        <input type="text" placeholder="Telefon"/>
+
+                        <input type="email" placerholder="E-mail (bruges til kvittering)"/>
+
+                        <button class="sign-drawer__submit">SKRIV UNDER NU</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="footer-top">
                 <img class="footer-emblem" src="images/Dyrenes-Beskyttelse-case-emblem.png" alt="Dyrenes Beskyttelse-emblem">
@@ -69,7 +127,7 @@
             </div>
 
         </section>
-        
+
         <footer class="footer">
             <div class="footer-nav-item">
                 <h3>ORGANISATION</h3>
