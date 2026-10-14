@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dyrenes Beskyttelse</title>
 
+    <link rel="stylesheet" href="stylesheet/fritgaaende.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="scripts/fritgaaende.js" defer></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +41,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>STØT FRITGÅENDE OG ØKOLOGISK LANDBRUGSDYR NÆR DIG</h1>
-                    <p></p>
+                    <button class="top-btn" type="button">Støt nu &nbsp; &nbsp; &nbsp; ⟶</button>
                 </div>
             </div>
             <div class="hero-image-wrap">
@@ -51,6 +54,74 @@
                 <p>Mange økologiske landmænd har svært ved at sælge deres fritgående dyr. På trods af at valget i høj grad kom til at handle om dyrevelfærd og den danske griseproduktion med fokus på blandt andet fritgående grise, så er der ikke et marked til økogrise lige nu. Årsagen til mindre efterspørgelsen på økoligiske og fritgående fyr er, hvor lidt der blver solg og hvor dyre de er at købe sammenlignet med andre produktioner. </p>
             </div>
         </section>
+         <section class="bodytext-section">
+            <div class="bodytext-section-inner">
+                <h1>Hvad går min donation til?</h1>
+                <p>Hos dyrenes beskyttelse fokusere på et økologisk animalsk produktion med reduceret dyretæthed og styrket lokal slagtning. Derfor sammenarbjder vi med lokale økologiske landmænd. Her vil din donation gå til at de fritgående dyr får bedre velfærd, mere plads og det rigtige foder. Din donation hjælper flere landmænd til at kunne gå økologisk og hermed skabe mere plads til dyr, samt hytter og bosteder hvor de kan gå fritgående. Ved en donation vil du få mulighed for at besøge dine lokale landmænd og møde de dyr du støtter. Kosten på økologisk kød vil gå ned og du ville kunne både se og smage forksllen, når du køber det i supermarkederne.</p>
+            </div>
+        </section>
+         <section class="bodytext-section">
+            <div class="bodytext-section-inner">
+                <h1>Hvad er forksellen på økologiske og konventionelle landbrugsdyr?</h1>
+            </div>
+
+            <div class="gametext-section-inner">
+                <p>Træk dit valgte dyr ind på marken<p>
+            </div>
+            <div class="animal-placing">
+                <div id="animal_1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img1" src="images/pig-draw.png" draggable="true" ondragstart="dragstartHandler(event)">
+                </div>
+                <div id="animal_2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img2" src="images/cow-draw.png" draggable="true" ondragstart="dragstartHandler(event)">
+                </div>
+                <div id="animal_3" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img3" src="images/chicken-draw.png" draggable="true" ondragstart="dragstartHandler(event)">
+                </div>
+            </div>
+
+            <div class="gametext-dropbox">
+                <h1>Opvoksning</h1>
+                <h1>Foder</h1>
+            </div>
+
+            <div class="drop-bg">
+                <div></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+            </div>
+
+            <div class="drop-box">
+                <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div3" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div4" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div5" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+            </div>
+
+            <div class="gametext-dropbox">
+                <h1>Slagtning</h1>
+                <h1>Medicin</h1>
+            </div>
+            <div class="drop-bg">
+                <div></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+                <div><img src="images/bg-game.png" alt="background"></div>
+            </div>
+
+            <div class="drop-box">
+                <div id="div6" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div7" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div8" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+                <div id="div9" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+            </div>
+        </section>
+
+
+
         <section>
             <div class="footer-top">
                 <img class="footer-emblem" src="images/Dyrenes-Beskyttelse-case-emblem.png" alt="Dyrenes Beskyttelse-emblem">
@@ -60,7 +131,6 @@
                     <p>Få sidste nyt om dyrevelfærd direkte i din indbakke. Du kan når som helst <br> framelde dig igen.</p>
                 </div>
             </div>
-
         </section>
         
         <footer class="footer">
