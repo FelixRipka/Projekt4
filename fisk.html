@@ -6,10 +6,13 @@
     <title>Dyrenes Beskyttelse</title>
 
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/quiz.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="scripts/quizzez/fisk-quiz.js" defer></script>
+    <script src="scripts/quizzez/quiz-runtime.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -53,6 +56,25 @@
                 <p>Akvakultur betyder opdræt af fisk, skaldyr og andre organismer i vand. Fisk udgør ifølge Fiskeristyrelsen 38.530 tons om året (79 procent), muslinger 10.227 tons om året (21 procent) og havtang 8 tons om året (0,02 procent). Fiskene opdrættes på mange forskellige måder; i havet i netbure, på land i damme, og indendørs i bassiner.</p>
             </div>
         </section>
+        <section class="animal-quiz" aria-label="Fiskequiz">
+            <div class="animal-quiz__container" id="fish-quiz">
+                <h1>TEST DIN VIDEN</h1>
+                <p class="animal-quiz__intro">Hvor meget ved du egentlig om fisk i akvakultur?</p>
+                <h2 class="animal-quiz__question"></h2>
+                <div class="animal-quiz__answers"></div>
+                <button class="animal-quiz__next animal-quiz__hidden" type="button">NÆSTE</button>
+                <div class="animal-quiz__result animal-quiz__hidden" aria-live="polite">
+                    <div class="animal-quiz__result-box">
+                        <p class="animal-quiz__result-text"></p>
+                    </div>
+                    <div class="animal-quiz__info-box">
+                        <h3>Bliv oplyst:</h3>
+                        <p class="animal-quiz__fact-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Her starter footeren -->
         <section>
             <div class="footer-top">

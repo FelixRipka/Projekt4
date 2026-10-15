@@ -7,12 +7,15 @@
 
     <link rel="stylesheet" href="stylesheet/grise.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/quiz.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
     
     <script src="scripts/slide-drawer.js" defer></script>
+    <script src="scripts/quizzez/gris-quiz.js" defer></script>
+    <script src="scripts/quizzez/quiz-runtime.js" defer></script>
 </head>
 
 <body>
@@ -185,6 +188,27 @@
                 </p>
             </div>
             <br>
+        </section>
+
+        <section class="animal-quiz pig-quiz" aria-label="Grisequiz">
+            <div class="animal-quiz__container" id="pig-quiz">
+                <h1>TEST DIN VIDEN</h1>
+                <p class="animal-quiz__intro">Hvor meget ved du egentlig om grise?</p>
+
+                <h2 class="animal-quiz__question"></h2>
+                <div class="animal-quiz__answers"></div>
+                <button class="animal-quiz__next animal-quiz__hidden" type="button">NÆSTE</button>
+
+                <div class="animal-quiz__result animal-quiz__hidden" aria-live="polite">
+                    <div class="animal-quiz__result-box">
+                        <p class="animal-quiz__result-text"></p>
+                    </div>
+                    <div class="animal-quiz__info-box">
+                        <h3>Bliv oplyst:</h3>
+                        <p class="animal-quiz__fact-text"></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Her starter footeren -->

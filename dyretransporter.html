@@ -7,13 +7,15 @@
 
     <link rel="stylesheet" href="stylesheet/dyretransport.css">
     <link rel="stylesheet" href="stylesheet/style.css">
-    
+    <link rel="stylesheet" href="stylesheet/quiz.css">
     
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="scripts/quizzez/dyretransport-quiz.js" defer></script>
+    <script src="scripts/quizzez/quiz-runtime.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -98,6 +100,25 @@
             </div>
         </section>
         
+        <section class="animal-quiz" aria-label="Dyretransportquiz">
+            <div class="animal-quiz__container" id="transport-quiz">
+                <h1>TEST DIN VIDEN</h1>
+                <p class="animal-quiz__intro">Hvor meget ved du egentlig om dyretransporter?</p>
+                <h2 class="animal-quiz__question"></h2>
+                <div class="animal-quiz__answers"></div>
+                <button class="animal-quiz__next animal-quiz__hidden" type="button">NÆSTE</button>
+                <div class="animal-quiz__result animal-quiz__hidden" aria-live="polite">
+                    <div class="animal-quiz__result-box">
+                        <p class="animal-quiz__result-text"></p>
+                    </div>
+                    <div class="animal-quiz__info-box">
+                        <h3>Bliv oplyst:</h3>
+                        <p class="animal-quiz__fact-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Her starter footeren -->
         <section>
             <div class="footer-top">
