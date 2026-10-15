@@ -1,5 +1,5 @@
 function dragstartHandler(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+  ev.dataTransfer.setData("text", ev.target.id); /*gets id of the element you*/
 }
 
 function dragoverHandler(ev) {
