@@ -67,12 +67,19 @@
   z-index: 99;
 }
 
-#div2{
+#div1{
     width: 60px;
     height: 60px;
     padding: 0px;
     border: 1px dashed black;
     
+}
+
+#div2{
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    border: 1px dashed black;
 }
 
 #div3{
@@ -83,13 +90,6 @@
 }
 
 #div4{
-    width: 60px;
-    height: 60px;
-    padding: 0px;
-    border: 1px dashed black;
-}
-
-#div5{
     width: 60px;
     height: 60px;
     padding: 0px;
