@@ -281,6 +281,20 @@ h3{
         
 }
 
+.content-section-inner h1 {
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:40px;
+    line-height:1.1;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.content-section-inner p, li{
+    font-size:18px;
+    line-height:1.6;
+    
+}
+
 .content-section h1{
     font-family:"Roboto Condensed", sans-serif;
     font-size:40px;

@@ -23,7 +23,8 @@
     width: 650px;
     height: 100vh;
     background: #ffffff;
-    /* box-shadow: -6px 0 30px rgba(0,0,0,0.18); */
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: -8px 0px 10px rgba(0,0,0,0.18);
     transition: right 0.45s ease;
     z-index: 9999;
     display: flex;
@@ -37,6 +38,8 @@
 .sign-drawer__inner {
     padding: 60px 50px;
     overflow-y: auto;
+    border: #000;
+    border-width: 10px;
 }
 
 .sign-drawer__close {
@@ -105,4 +108,24 @@
     cursor: pointer;
     border-radius: 0px;
     transition: 0.2s ease;
+}
+
+.sign-drawer .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sign-drawer .input-wrapper input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sign-drawer .input-wrapper.required::after {
+    content: "*";
+    position: absolute;
+    right: 16px;
+    color: #999999;
+    font-size: 18px;
+    pointer-events: none;
 }
