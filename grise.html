@@ -102,23 +102,29 @@
                 <div class="sign-drawer__inner">
                     <button class="sign-drawer__close" id="signDrawerClose">&#10799;</button>
 
-                    <h2>123.941</h2>
+                    <h2 id="signCounter">0</h2>
                     <p>
                         personer har allerede skrevet under.
-                        <br>
+                    <br>
                         <span class="accentuated">
                             Nu er det din tur!
                         </span>
                     </p>
 
-                    <form>
+                    <form id="signForm">
                         <div class="inputfield-row">
-                            <div class="input-wrapper required">
-                                <input type="text" placeholder="Fornavn"/>
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="firstNameInput" placeholder="Fornavn"/>
+                                </div>
+                                <div class="missing-input__firstname">Indtast venligst et fornavn</div>
                             </div>
-                            
-                            <div class="input-wrapper required">
-                                <input type="text" placeholder="Efternavn"/>
+
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="lastNameInput" placeholder="Efternavn"/>
+                                </div>
+                                <div class="missing-input__lastname">Indtast venligst et efternavn</div>
                             </div>
                         </div>
 
@@ -126,13 +132,32 @@
                             <input type="text" placeholder="Telefon"/>
                         </div>
                         
-                        <div class="input-wrapper required">
-                            <input type="email" placeholder="E-mail (bruges til kvittering)"/>
+                        <div class="columnpls">
+                            <div class="input-wrapper required">
+                                <input type="text" id="emailInput" placeholder="E-mail (bruges til kvittering)"/>
+                            </div>
+                            <div class="missing-input__email">Indtast venligst en gyldig email</div>
                         </div>
 
-                        <button class="sign-drawer__submit">SKRIV UNDER NU</button>
-                    </form>
+                        <button class="sign-drawer__submit" type="submit">SKRIV UNDER NU</button>
+                        
+                        <div class="checkmark-desc__box">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                Ja tak, jeg vil gerne holdes opdateret om forholdene for danske grise og kampen for at skabe bedre forhold for landbrugsdyrene. Jeg modtager samtidig Dyrenes Beskyttelses nyhedsbreve.
+                            </p>
+                        </div>
+                    
+                        <div class="privacypolicy-text">
+                            <p>
+                                Når jeg skriver under, accepterer jeg hermed Dyrenes Beskyttelses <strong>privatlivspolitik</strong>. Hvis jeg har udfyldt mit telefonnummer, må I gerne kontakte mig telefonisk med tilbud om støtte.
+                            </p>
+                        </div>
 
+                    </form>
                 </div>
             </div>
         </section>
@@ -142,11 +167,11 @@
                 <br>
                 <h1>Den kloge gris</h1>
                 <p>
-                Grisen er et af de dyr, som ligner mennesker mest. Fra de indre organer til den mentale kapacitet. Forstået sådan, at grisen er intelligent på en måde, som mennesker kan sammenligne os med og spejle os i. Grise kan udsætte behov, løse opgaver, lege gemmeleg og samarbejde - og de er renlige, har et varieret sprog og en kompleks social adfærd.
+                    Grisen er et af de dyr, som ligner mennesker mest. Fra de indre organer til den mentale kapacitet. Forstået sådan, at grisen er intelligent på en måde, som mennesker kan sammenligne os med og spejle os i. Grise kan udsætte behov, løse opgaver, lege gemmeleg og samarbejde - og de er renlige, har et varieret sprog og en kompleks social adfærd.
                 <br><br>
-                Men grisene er spærret inde i industriens anlæg, så vi møder dem ikke, og vi ser dem ikke. Og de færreste tænker på, hvilket liv grisen på tallerkenen har levet.
+                    Men grisene er spærret inde i industriens anlæg, så vi møder dem ikke, og vi ser dem ikke. Og de færreste tænker på, hvilket liv grisen på tallerkenen har levet.
                 <br><br>
-                Dyrenes Beskyttelse arbejder for at gøre grisen synlig og få flere og flere til at tale højt om grisens liv i industrien, så vi kan presse på for at give grisene leveværdige liv, inden de bliver til mad.
+                    Dyrenes Beskyttelse arbejder for at gøre grisen synlig og få flere og flere til at tale højt om grisens liv i industrien, så vi kan presse på for at give grisene leveværdige liv, inden de bliver til mad.
                 </p>
             </div>
             <br>
@@ -157,15 +182,15 @@
                 <br>
                 <h1>Den vilde gris</h1>
                 <p>
-                Moderne gris, gamle behov: Den moderne tamgris stammer faktisk fra vildsvinet, som har levet vildt i mere end to millioner år.
+                    Moderne gris, gamle behov: Den moderne tamgris stammer faktisk fra vildsvinet, som har levet vildt i mere end to millioner år.
                 <br><br>
-                For 9.000 år siden begyndte man at tæmme grisen. De tamme grise lignede vildsvinene, men med tiden har de mistet pelslaget, og så er soen blevet meget større.
+                    For 9.000 år siden begyndte man at tæmme grisen. De tamme grise lignede vildsvinene, men med tiden har de mistet pelslaget, og så er soen blevet meget større.
                 <br>
-                De behov, som tamgrisen har i dag, ligner dem, som vildsvinet havde og stadig har. For eksempel vil soen bygge rede og passe sine unger, hvis hun får mulighed for det.
+                    De behov, som tamgrisen har i dag, ligner dem, som vildsvinet havde og stadig har. For eksempel vil soen bygge rede og passe sine unger, hvis hun får mulighed for det.
                 <br>
-                I Danmark bliver der produceret cirka 40 millioner grise hvert år. De bliver født af omkring en million søer.
+                    I Danmark bliver der produceret cirka 40 millioner grise hvert år. De bliver født af omkring en million søer.
                 <br><br> 
-                I naturen kan en so blive over 15 år gammel. I den industrielle produktion bliver soen typisk kun et til tre år gammel, før hun bliver skiftet ud og sendt til slagtning eller dør i stalden af sygdom eller skader.
+                    I naturen kan en so blive over 15 år gammel. I den industrielle produktion bliver soen typisk kun et til tre år gammel, før hun bliver skiftet ud og sendt til slagtning eller dør i stalden af sygdom eller skader.
                 </p>
             </div>
             <br>
@@ -176,15 +201,15 @@
                 <br>
                 <h1>Det første døgn</h1>
                 <p>
-                Når soen har født, etablerer hendes unger den såkaldte patteorden i løbet af de første døgn. Det er deres første rangorden, hvor de hver især tilkæmper sig en patte, som derefter er deres egen, og som de altid søger hen til. Ved at fordele pladserne hos moderen undgår de unødige slagsmål under diegivningen.
+                    Når soen har født, etablerer hendes unger den såkaldte patteorden i løbet af de første døgn. Det er deres første rangorden, hvor de hver især tilkæmper sig en patte, som derefter er deres egen, og som de altid søger hen til. Ved at fordele pladserne hos moderen undgår de unødige slagsmål under diegivningen.
                 <br><br>
-                Den moderne so er avlet til at føde i gennemsnit 20 grise. Mange søer får endnu flere unger, men hun har kun 14-15 patter til at give die. Det er et regnestykke, der ikke går op og umuliggør den naturlige patteorden.
+                    Den moderne so er avlet til at føde i gennemsnit 20 grise. Mange søer får endnu flere unger, men hun har kun 14-15 patter til at give die. Det er et regnestykke, der ikke går op og umuliggør den naturlige patteorden.
                 <br>
-                I det konventionelle landbrug er målet med soen, at hun skal levere flest mulige grise om året. Hun er cirka otte måneder gammel, første gang hun bliver drægtig.
+                    I det konventionelle landbrug er målet med soen, at hun skal levere flest mulige grise om året. Hun er cirka otte måneder gammel, første gang hun bliver drægtig.
                 <br><br>
-                Herefter kommer hun ind i en fast cyklus i stalden: Først løbestald, så drægtighedsstald og dernæst farestald. Igen og igen.
+                    Herefter kommer hun ind i en fast cyklus i stalden: Først løbestald, så drægtighedsstald og dernæst farestald. Igen og igen.
                 <br>
-                Hendes unger bliver taget fra hende allerede efter tre-fire uger, så hun kan blive drægtig igen.
+                    Hendes unger bliver taget fra hende allerede efter tre-fire uger, så hun kan blive drægtig igen.
                 </p>
             </div>
             <br>

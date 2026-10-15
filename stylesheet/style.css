@@ -50,7 +50,7 @@ h3{
     flex-shrink:0;
 }
 
-.logo img{
+.logo img {
     height:40px;
     width:auto;
     display:block;
@@ -58,14 +58,14 @@ h3{
 
 /* MENU */
 
-.nav-links{
+.nav-links {
     display:flex;
     align-items:center;
     list-style:none;
     gap:55px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration:none;
     color:#000;
 
