@@ -6,8 +6,10 @@ function dragoverHandler(ev) {
   ev.preventDefault();
 }
 
+
 function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
+  document.getElementById("bg1").innerHTML = "<img src='images/opvoksning-oko.png'>";
 }
