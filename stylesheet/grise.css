@@ -99,7 +99,7 @@
 }
 
 .sign-drawer input:focus {
-    border: 1px solid #cfcfcf;
+    border: 1px solid #ff0000;
     border-radius: 4px;
 }
 
