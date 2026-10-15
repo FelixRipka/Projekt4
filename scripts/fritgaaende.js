@@ -32,14 +32,14 @@ function dropHandler2(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg2").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg2").innerHTML = "<img src='images/opvoksning-kon.svg'>";
 }
 
 function dropHandler3(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg3").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg3").innerHTML = "<img src='images/foder-oko.svg'>";
 }
 
 function dropHandler4(ev) {
