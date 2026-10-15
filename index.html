@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
     <script src="scripts/carousel.js" defer></script>
     <script src="scripts/slide-drawer.js" defer></script>
+    <script src="scripts/donation-slider.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -138,8 +139,35 @@ skal være uanmeldt og risikobaseret.</p>
                         </div>
                     </div>
                     <button class="carousel-arrow" type="button" data-carousel-direction="next" aria-label="Vis næste mærkesag">&#8594;</button>
+                <br>
                 </div>
             </div>
+
+<div class="donation-widget">
+	<section class="donation" aria-label="Vælg dit donationsbeløb">
+		<section class="donation__controls">
+			<output class="donation__amount" data-donation-amount aria-live="polite">50 KR</output>
+			<input
+				class="donation__slider"
+				data-donation-slider
+				type="range"
+				min="50"
+				max="500"
+				step="50"
+				value="50"
+				aria-label="Vælg donationsbeløb i kroner"
+			>
+			<button class="donation__button" type="button">DONÉR</button>
+		</section>
+
+		<section class="donation__impact" aria-live="polite" aria-atomic="true">
+			<p class="donation__equivalent" data-donation-equivalent>EN KOP KAFFE</p>
+			<p class="donation__separator">ELLER</p>
+			<p class="donation__description" data-donation-description>5 DAGES MAD TIL EN HUND<br>PÅ ET DANSK INTERNAT</p>
+		</section>
+	</section>
+	</div>
+
         </section>
       <!-- Her starter footeren -->
         <section>
