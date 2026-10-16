@@ -291,15 +291,44 @@ h3 {
 
 .support-drawer__submit {
     margin-top: 10px;
-    padding: 25px 16px;
+    padding: 15px 16px;
     background: var(--footer-top);
     color: #fff;
-    border: black 1px solid;
+    border: 0px solid;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 0px;
-    transition: 0.2s ease;
+}
+
+.donation-button {
+    margin-top: 10px;
+    padding: 15px 16px;
+    background: #fff;
+    color: #000;
+    border: 0.5px solid #cfcfcf;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.donation-button__selected {
+    margin-top: 10px;
+    padding: 15px 16px;
+    background: var(--footer-top);
+    color: #fff;
+    border: 1px solid #cfcfcf;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .inputfield-row {
@@ -336,12 +365,14 @@ h3 {
     flex-direction: column;
 }
 
-.missing-input__firstname, .missing-input__lastname, .missing-input__email {
+.missing-input__customAmount,
+.missing-input__firstnameSign, .missing-input__lastnameSign, .missing-input__emailSign,
+.missing-input__firstnameSupport, .missing-input__lastnameSupport, .missing-input__emailSupport {
     margin-top: 5px;
     font-style: italic;
     font-size: 13px;
     color: var(--red);
-    display: none;
+    display: block;
 }
 
 .container {

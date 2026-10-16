@@ -35,17 +35,17 @@ const lastNameInput = document.getElementById("lastNameInput");
 const emailInput = document.getElementById("emailInput");
 const signCounter = document.getElementById("signCounter");
 
-const firstNameError = document.querySelector(".missing-input__firstname");
-const lastNameError = document.querySelector(".missing-input__lastname");
-const emailError = document.querySelector(".missing-input__email");
+const firstNameErrorSign = document.querySelector(".missing-input__firstnameSign");
+const lastNameErrorSign = document.querySelector(".missing-input__lastnameSign");
+const emailErrorSign = document.querySelector(".missing-input__emailSign");
 
 const signForm = document.getElementById("signForm");
 
 // start counter at 0 and hide error messages by default
 signCounter.textContent = "0";
-firstNameError.style.display = "none";
-lastNameError.style.display = "none";
-emailError.style.display = "none";
+firstNameErrorSign.style.display = "none";
+lastNameErrorSign.style.display = "none";
+emailErrorSign.style.display = "none";
 
 signForm.addEventListener("submit", function(e) {
     e.preventDefault(); // stops the page from refreshing i think
@@ -53,24 +53,24 @@ signForm.addEventListener("submit", function(e) {
     let isValid = true;
 
     if (firstNameInput.value.trim() === "") {
-        firstNameError.style.display = "block";
+        firstNameErrorSign.style.display = "block";
         isValid = false;
     } else {
-        firstNameError.style.display = "none";
+        firstNameErrorSign.style.display = "none";
     }
 
     if (lastNameInput.value.trim() === "") {
-        lastNameError.style.display = "block";
+        lastNameErrorSign.style.display = "block";
         isValid = false;
     } else {
-        lastNameError.style.display = "none";
+        lastNameErrorSign.style.display = "none";
     }
 
     if (emailInput.value.trim() === "") {
-        emailError.style.display = "block";
+        emailErrorSign.style.display = "block";
         isValid = false;
     } else {
-        emailError.style.display = "none";
+        emailErrorSign.style.display = "none";
     }
 
     // adds +1 to the counter ONLY if all 3 required fields have userinput when submitting

@@ -77,9 +77,9 @@
                     <form>
                         <h2>Hvordan vil du støtte?</h2>
 
-                        <div>
-                            <button class="donation-button">Bliv Medlem</button>
-                            <button class="donation-button">Støt én gang</button>
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button__selected">Bliv Medlem</button>
+                            <button type="button" class="donation-button">Støt én gang</button>
                         </div>
 
                         <div>
@@ -93,11 +93,11 @@
 
                         <h2>Vælg <span id="onceOrMonth">engangsbeløb</span></h2>
 
-                        <div>
-                            <button class="donation-button" id="donationAmount1">500 kr.</button>
-                            <button class="donation-button" id="donationAmount2">250 kr.</button>
-                            <button class="donation-button" id="donationAmount3">100 kr.</button>
-                            <button class="donation-button">Andet</button>
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button" id="donationAmount1">500 kr.</button>
+                            <button type="button" class="donation-button" id="donationAmount2">250 kr.</button>
+                            <button type="button" class="donation-button" id="donationAmount3">100 kr.</button>
+                            <button type="button" class="donation-button">Andet</button>
                         </div>
 
                         <div class="columnpls">
@@ -114,14 +114,14 @@
                                 <div class="input-wrapper required">
                                     <input type="text" id="firstNameInput" placeholder="Fornavn"/>
                                 </div>
-                                <div class="missing-input__firstname">Indtast venligst et fornavn</div>
+                                <div class="missing-input__firstnameSupport">Indtast venligst et fornavn</div>
                             </div>
 
                             <div class="columnpls">
                                 <div class="input-wrapper required">
                                     <input type="text" id="lastNameInput" placeholder="Efternavn"/>
                                 </div>
-                                <div class="missing-input__lastname">Indtast venligst et efternavn</div>
+                                <div class="missing-input__lastnameSupport">Indtast venligst et efternavn</div>
                             </div>
                         </div>
 
@@ -129,10 +129,10 @@
                             <div class="input-wrapper required">
                                 <input type="text" id="emailInput" placeholder="E-mail (bruges til kvittering)"/>
                             </div>
-                            <div class="missing-input__email">Indtast venligst en gyldig email</div>
+                            <div class="missing-input__emailSupport">Indtast venligst en gyldig email</div>
                         </div>
 
-                        <button class="sign-drawer__submit" type="submit">STØT DYRENE</button>
+                        <button class="support-drawer__submit" type="submit">STØT DYRENE</button>
 
                         <div class="checkmark-desc__box">
                             <label class="container">
@@ -175,14 +175,14 @@
                                 <div class="input-wrapper required">
                                     <input type="text" id="firstNameInput" placeholder="Fornavn"/>
                                 </div>
-                                <div class="missing-input__firstname">Indtast venligst et fornavn</div>
+                                <div class="missing-input__firstnameSign">Indtast venligst et fornavn</div>
                             </div>
 
                             <div class="columnpls">
                                 <div class="input-wrapper required">
                                     <input type="text" id="lastNameInput" placeholder="Efternavn"/>
                                 </div>
-                                <div class="missing-input__lastname">Indtast venligst et efternavn</div>
+                                <div class="missing-input__lastnameSign">Indtast venligst et efternavn</div>
                             </div>
                         </div>
 
@@ -194,7 +194,7 @@
                             <div class="input-wrapper required">
                                 <input type="text" id="emailInput" placeholder="E-mail (bruges til kvittering)"/>
                             </div>
-                            <div class="missing-input__email">Indtast venligst en gyldig email</div>
+                            <div class="missing-input__emailSign">Indtast venligst en gyldig email</div>
                         </div>
 
                         <button class="sign-drawer__submit" type="submit">SKRIV UNDER NU</button>
@@ -205,7 +205,7 @@
                                 <span class="checkmark"></span>
                             </label>
                             <p>
-                                Ja tak, jeg vil gerne holdes opdateret om forholdene for danske grise og kampen for at skabe bedre forhold for landbrugsdyrene. Jeg modtager samtidig Dyrenes Beskyttelses nyhedsbreve.
+                                <strong>Ja tak, jeg vil gerne holdes opdateret om forholdene for danske grise og kampen for at skabe bedre forhold for landbrugsdyrene. Jeg modtager samtidig Dyrenes Beskyttelses nyhedsbreve.</strong>
                             </p>
                         </div>
                     
