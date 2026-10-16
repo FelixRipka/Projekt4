@@ -13,24 +13,23 @@ drawerClose.addEventListener("click", () => {
     drawer.classList.remove("open");
 });
 
-
 // "SKRIV UNDER FOR GRISENE" drawer
 
 const sign = document.getElementById("signDrawer");
+const signBtn = document.querySelector(".sign-btn");
 const signClose = document.getElementById("signDrawerClose");
 
-document.addEventListener("click", (e) => {
-    if (e.target instanceof Element && e.target.closest(".sign-btn")) {
-        e.preventDefault();
-        sign.classList.toggle("open");
-    }
+signBtn.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    sign.classList.toggle("open");
 });
 
 signClose.addEventListener("click", () => {
     sign.classList.remove("open");
 });
 
-// Counter and Validation Logic on Submit
+
+// "SKRIV UNDER FOR GRISENE" counter
 const firstNameInput = document.getElementById("firstNameInput");
 const lastNameInput = document.getElementById("lastNameInput");
 const emailInput = document.getElementById("emailInput");
@@ -42,14 +41,14 @@ const emailError = document.querySelector(".missing-input__email");
 
 const signForm = document.getElementById("signForm");
 
-// Initialize counter at 0 and hide errors by default
+// start counter at 0 and hide error messages by default
 signCounter.textContent = "0";
 firstNameError.style.display = "none";
 lastNameError.style.display = "none";
 emailError.style.display = "none";
 
 signForm.addEventListener("submit", function(e) {
-    e.preventDefault(); // Stops the page from refreshing
+    e.preventDefault(); // stops the page from refreshing i think
     
     let isValid = true;
 
@@ -74,7 +73,7 @@ signForm.addEventListener("submit", function(e) {
         emailError.style.display = "none";
     }
 
-    // Only +1 to the counter if all 3 required fields have text when submitting
+    // adds +1 to the counter ONLY if all 3 required fields have userinput when submitting
     if (isValid) {
         let currentCount = parseInt(signCounter.textContent, 10);
         signCounter.textContent = currentCount + 1;

@@ -24,7 +24,7 @@
     height: 100vh;
     background: #ffffff;
     border-radius: 15px 0px 0px 15px;
-    box-shadow: -8px 0px 10px rgba(0,0,0,0.18);
+    box-shadow: 0px;
     transition: right 0.45s ease;
     z-index: 9999;
     display: flex;
@@ -34,6 +34,7 @@
 
 .sign-drawer.open {
     right: 0;
+    box-shadow: -8px 0px 10px rgba(0,0,0,0.18);
 }
 
 .sign-drawer__inner {
@@ -57,7 +58,6 @@
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 5px;
-    color:var(--dark);
     font-family:"Roboto Condensed", sans-serif;
     color: var(--red);
     text-align: center;
@@ -145,87 +145,4 @@
     color: #999999;
     font-size: 25px;
     pointer-events: none;
-}
-
-.columnpls {
-    display: flex;
-    flex-direction: column;
-}
-
-.missing-input__firstname, .missing-input__lastname, .missing-input__email {
-    margin-top: 5px;
-    font-style: italic;
-    font-size: 13px;
-    color: var(--red);
-    display: none;
-}
-
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border: solid 1px #cfcfcf;
-    border-radius: 50px;
-}
-
-.checkmark:hover {
-    border: 1px solid var(--red);
-    box-shadow: 0 0 0 5px rgba(158, 0, 0, 0.18);
-    transition: all 0.25s ease;
-}
-
-/* checkmark icon is hidden by default */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* and toggled when clicked */
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* styling the icon itself */
-.container .checkmark:after {
-    left: 8px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid #cfcfcf;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-}
-
-/* just to get the checkmark and the text aligned */
-.checkmark-desc__box {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -40px;
-}
-
-.checkmark-desc__box p, .privacypolicy-text p {
-    text-align: left;
 }
