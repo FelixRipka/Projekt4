@@ -17,32 +17,6 @@
     font-weight:600;
 }
 
-.bodytext-section{
-    background: #fff;
-    padding-bottom: 40px;
-    padding-top: 60px;
-}
-
-.bodytext-section-inner{
-    max-width:1040px;
-    margin-left: 15%;
-        
-}
-
-.bodytext-section h1{
-    font-family:"Roboto Condensed", sans-serif;
-    font-size:40px;
-    line-height:1.1;
-    font-weight:600;
-    margin-bottom:20px;
-    
-}
-
-.bodytext-section p, li{
-    font-size:18px;
-    line-height:1.6;  
-}
-
 .transp-img{
     display: block;
     margin-left: auto;
