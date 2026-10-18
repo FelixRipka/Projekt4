@@ -1,13 +1,13 @@
 function dragstartHandler(ev) {
   ev.dataTransfer.setData("text", ev.target.id); /*gets id of the element you*/
-  document.getElementById("bg1").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg2").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg3").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg4").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg5").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg6").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg7").innerHTML = "<img src='images/bg-game.png'>";
-  document.getElementById("bg8").innerHTML = "<img src='images/bg-game.png'>";
+  document.getElementById("bg1").innerHTML = "<img src='images/bg-game-oko.svg'>";
+  document.getElementById("bg2").innerHTML = "<img src='images/bg-game-kon.svg'>";
+  document.getElementById("bg3").innerHTML = "<img src='images/bg-game-oko.svg'>";
+  document.getElementById("bg4").innerHTML = "<img src='images/bg-game-kon.svg'>";
+  document.getElementById("bg5").innerHTML = "<img src='images/bg-game-oko.svg'>";
+  document.getElementById("bg6").innerHTML = "<img src='images/bg-game-kon.svg'>";
+  document.getElementById("bg7").innerHTML = "<img src='images/bg-game-oko.svg'>";
+  document.getElementById("bg8").innerHTML = "<img src='images/bg-game-kon.svg'>";
 }
 
 function dragoverHandler(ev) {
@@ -46,21 +46,21 @@ function dropHandler4(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg4").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg4").innerHTML = "<img src='images/foder-kon.svg'>";
 }
 
 function dropHandler5(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg5").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg5").innerHTML = "<img src='images/slagtning-oko.svg'>";
 }
 
 function dropHandler6(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg6").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg6").innerHTML = "<img src='images/slagtning-kon.svg'>";
 }
 
 function dropHandler7(ev) {
