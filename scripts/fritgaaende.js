@@ -67,12 +67,12 @@ function dropHandler7(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg7").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg7").innerHTML = "<img src='images/medicin-oko.svg'>";
 }
 
 function dropHandler8(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById("bg8").innerHTML = "<img src='images/opvoksning-oko.svg'>";
+  document.getElementById("bg8").innerHTML = "<img src='images/medicin-kon.svg'>";
 }
