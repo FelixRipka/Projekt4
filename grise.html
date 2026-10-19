@@ -75,11 +75,11 @@
                 <div class="support-drawer__inner">
                     <button class="support-drawer__close" id="supportDrawerClose">&#10799;</button>
                     
-                    <form>
+                    <form id="supportForm">
                         <h2>Hvordan vil du støtte?</h2>
 
                         <div class="buttons-row">
-                            <button type="button" class="donation-button__selected">Bliv Medlem</button>
+                            <button type="button" class="donation-button">Bliv Medlem</button>
                             <button type="button" class="donation-button">Støt én gang</button>
                         </div>
 
@@ -95,15 +95,15 @@
                         <h2>Vælg <span id="onceOrMonth">engangsbeløb</span></h2>
 
                         <div class="buttons-row">
-                            <button type="button" class="donation-button" id="donationAmount1">500 kr.</button>
-                            <button type="button" class="donation-button" id="donationAmount2">250 kr.</button>
-                            <button type="button" class="donation-button" id="donationAmount3">100 kr.</button>
+                            <button type="button" class="donation-button" id="donationAmount1"> kr.</button>
+                            <button type="button" class="donation-button" id="donationAmount2"> kr.</button>
+                            <button type="button" class="donation-button" id="donationAmount3"> kr.</button>
                             <button type="button" class="donation-button">Andet</button>
                         </div>
 
                         <div class="columnpls">
-                            <div class="input-wrapper required">
-                                <input type="text" id="customAmount" placeholder="Beløb i kr."/>
+                            <div class="input-wrapper optional-required">
+                                <input type="text" class="customAmountInput" id="customAmount" placeholder="Beløb i kr."/>
                             </div>
                             <div class="missing-input__customAmount">Indtast venligst et gyldigt beløb</div>
                         </div>
@@ -113,14 +113,14 @@
                         <div class="inputfield-row">
                             <div class="columnpls">
                                 <div class="input-wrapper required">
-                                    <input type="text" id="firstNameInput" placeholder="Fornavn"/>
+                                    <input type="text" id="firstNameInputSupport" placeholder="Fornavn"/>
                                 </div>
                                 <div class="missing-input__firstnameSupport">Indtast venligst et fornavn</div>
                             </div>
 
                             <div class="columnpls">
                                 <div class="input-wrapper required">
-                                    <input type="text" id="lastNameInput" placeholder="Efternavn"/>
+                                    <input type="text" id="lastNameInputSupport" placeholder="Efternavn"/>
                                 </div>
                                 <div class="missing-input__lastnameSupport">Indtast venligst et efternavn</div>
                             </div>
@@ -128,7 +128,7 @@
 
                         <div class="columnpls">
                             <div class="input-wrapper required">
-                                <input type="text" id="emailInput" placeholder="E-mail (bruges til kvittering)"/>
+                                <input type="text" id="emailInputSupport" placeholder="E-mail (bruges til kvittering)"/>
                             </div>
                             <div class="missing-input__emailSupport">Indtast venligst en gyldig email</div>
                         </div>
@@ -174,14 +174,14 @@
                         <div class="inputfield-row">
                             <div class="columnpls">
                                 <div class="input-wrapper required">
-                                    <input type="text" id="firstNameInput" placeholder="Fornavn"/>
+                                    <input type="text" id="firstNameInputSign" placeholder="Fornavn"/>
                                 </div>
                                 <div class="missing-input__firstnameSign">Indtast venligst et fornavn</div>
                             </div>
 
                             <div class="columnpls">
                                 <div class="input-wrapper required">
-                                    <input type="text" id="lastNameInput" placeholder="Efternavn"/>
+                                    <input type="text" id="lastNameInputSign" placeholder="Efternavn"/>
                                 </div>
                                 <div class="missing-input__lastnameSign">Indtast venligst et efternavn</div>
                             </div>
@@ -193,7 +193,7 @@
                         
                         <div class="columnpls">
                             <div class="input-wrapper required">
-                                <input type="text" id="emailInput" placeholder="E-mail (bruges til kvittering)"/>
+                                <input type="text" id="emailInputSign" placeholder="E-mail (bruges til kvittering)"/>
                             </div>
                             <div class="missing-input__emailSign">Indtast venligst en gyldig email</div>
                         </div>
@@ -273,6 +273,7 @@
             </div>
             <br>
         </section>
+        <br><br>
         <section class="timeline">
             <div class="timeline-inner">
                 <h1>TIDSLINJE</h1>
