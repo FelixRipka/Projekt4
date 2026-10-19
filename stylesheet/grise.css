@@ -1,3 +1,11 @@
+:root{
+    --bg:#F5F0E6;
+    --red:#7E0C00;
+    --button:#FF4F3E;
+    --dark:#000000;
+    --footer-top:#9D0000;
+}
+
 .sign-btn {
     border:none;
     color:#fff;
@@ -145,4 +153,60 @@
     color: #999999;
     font-size: 25px;
     pointer-events: none;
+}
+
+.timeline{
+    display: flex;
+    justify-self: center;
+    width: 800px;
+    height: auto;
+    background-color: var(--bg);
+    padding: 40px 80px;
+}
+
+.timeline-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.timeline-inner h1{
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: var(--red);
+}
+
+.timeline-inner h2{
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 600px;
+    color: var(--red);
+}
+
+.timeline-inner h3{
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: var(--dark);
+}
+
+.timeline-inner p{
+    font-family:Helvetica, sans-serif;
+    font-size: 18px;
+    line-height:1.6;
+    text-align: center;
+}
+
+.støt-img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.kalenderikon{
+    width: 40px;
+}
+
+.roedstreg{
+    width: 2px;
+    height: 50px;
 }

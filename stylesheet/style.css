@@ -482,6 +482,23 @@ h3 {
     
 }
 
+.sign-btn-other{
+    border:none;
+    color:#fff;
+    background:var(--button);
+
+    padding:12px 24px;
+
+    cursor:pointer;
+
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+
+    max-width:1040px;
+}
+
 .bodytext-section{
     background: #fff;
     padding-top: 40px;
