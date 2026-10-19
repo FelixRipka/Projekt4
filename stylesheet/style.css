@@ -202,6 +202,7 @@ h3 {
     flex-direction: column;
     overflow-y: auto;
     box-sizing: border-box;
+    scrollbar-gutter: stable;
 }
 
 .support-drawer.open {
@@ -303,13 +304,35 @@ h3 {
 }
 
 .support-benefits {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 0;
+    margin-bottom: 12px;
     background: #faf7f7;
     border: 1px solid #e5d6d6;
     border-left: 4px solid #a60000;
-    padding: 14px 16px;
-    margin: 0 0 12px;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
-    display: block;
+    overflow: hidden;
+    transition: grid-template-rows 0.35s ease, padding-top 0.35s ease, padding-bottom 0.35s ease, margin-bottom 0.35s ease, border-width 0.35s ease;
+}
+
+.support-benefits > div {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.support-benefits.support-benefits--hidden {
+    grid-template-rows: 0fr;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-right-width: 0;
 }
 
 .support-benefits p {
