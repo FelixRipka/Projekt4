@@ -618,6 +618,10 @@ h3 {
     
 }
 
+.content-section .support-btn {
+    color: #fff;
+}
+
 .sign-btn {
     border:none;
     color:#fff;
