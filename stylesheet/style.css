@@ -804,7 +804,6 @@ h3 {
     width: 300px;
     background-color: var(--button);
     padding: 20px;
-
 }
 
 .two-link-box-inner h1{
@@ -841,6 +840,12 @@ h3 {
     font-size:18px;
     font-weight:600;
 }
+
+.frit-link{
+    text-decoration: none;
+}
+
+
 
 .transp-btn{
     display: flex;
