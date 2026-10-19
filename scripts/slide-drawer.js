@@ -16,10 +16,14 @@ drawerClose.addEventListener("click", () => {
 // "SKRIV UNDER FOR GRISENE" drawer
 
 const sign = document.getElementById("signDrawer");
-const signBtn = document.querySelector(".sign-btn");
 const signClose = document.getElementById("signDrawerClose");
 
-signBtn.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
+    const signBtn = e.target.closest(".sign-btn");
+    if (!signBtn) {
+        return;
+    }
+
     e.preventDefault(); 
     sign.classList.toggle("open");
 });

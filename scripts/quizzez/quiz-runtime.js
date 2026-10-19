@@ -55,6 +55,8 @@
             answer.disabled = true;
         });
 
+        answers[selectedIndex].classList.add("selected");
+
         if (selectedIndex === question.correct) {
             answers[selectedIndex].classList.add("correct");
             resultText.textContent = `Svaret er korrekt: ${question.answers[question.correct]}`;

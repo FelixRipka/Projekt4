@@ -1,13 +1,13 @@
 .animal-quiz {
     width: 100%;
     margin: 0 auto;
-    padding: 48px 24px;
+    padding: 36px 24px;
 }
 
 .animal-quiz__container {
-    max-width: 1040px;
+    max-width: 920px;
     margin: 0 auto;
-    padding: clamp(24px, 5vw, 56px);
+    padding: clamp(20px, 4vw, 40px);
     background: var(--bg, #f5f0e6);
     color: #111;
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
@@ -15,30 +15,30 @@
 }
 
 .animal-quiz__container h1 {
-    margin: 0 0 20px;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0 0 16px;
+    font-size: clamp(1.75rem, 4vw, 3rem);
     font-weight: 900;
 }
 
 .animal-quiz__intro {
     max-width: 600px;
-    margin: 0 0 40px;
-    font-size: clamp(1.15rem, 2.5vw, 1.5rem);
-    line-height: 1.4;
+    margin: 0 0 22px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.35;
 }
 
 .animal-quiz__question {
-    margin: 0 0 24px;
-    font-size: clamp(1.35rem, 3vw, 2rem);
+    margin: 0 0 16px;
+    font-size: clamp(1.2rem, 2.5vw, 1.75rem);
 }
 
 .animal-quiz__answer {
     display: flex;
     width: 100%;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 12px;
-    padding: 18px 20px;
+    gap: 14px;
+    margin-bottom: 10px;
+    padding: 14px 18px;
     border: 2px solid transparent;
     background: #f5f5f5;
     color: inherit;
@@ -77,8 +77,11 @@
     background: #b7e59f;
 }
 
-.animal-quiz__answer.correct .animal-quiz__answer-circle,
-.animal-quiz__answer.wrong .animal-quiz__answer-circle {
+.animal-quiz__answer.selected.correct .animal-quiz__answer-circle {
+    background: #80c36a;
+}
+
+.animal-quiz__answer.selected.wrong .animal-quiz__answer-circle {
     background: #ff5a45;
 }
 
@@ -88,12 +91,12 @@
 }
 
 .animal-quiz__next {
-    margin-top: 16px;
-    padding: 14px 30px;
+    margin-top: 12px;
+    padding: 12px 26px;
     border: 2px solid #222;
     background: #fff;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -108,13 +111,13 @@
 .animal-quiz__result {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .animal-quiz__result-box,
 .animal-quiz__info-box {
-    min-height: 160px;
-    padding: 32px;
+    min-height: 120px;
+    padding: 20px;
 }
 
 .animal-quiz__result-box {
@@ -127,15 +130,15 @@
 }
 
 .animal-quiz__info-box h3 {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .animal-quiz__result-box p,
 .animal-quiz__info-box p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.55;
 }
 
 .animal-quiz__complete-button {
@@ -161,7 +164,7 @@
 
 @media (max-width: 768px) {
     .animal-quiz {
-        padding: 32px 16px;
+        padding: 28px 16px;
     }
 
     .animal-quiz__result {
