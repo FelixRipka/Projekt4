@@ -246,11 +246,10 @@ h3 {
 
 .support-drawer__inner p {
     font-size: 16px;
-    line-height: 1.4;
-    color: #000;
+    line-height: 1.55;
+    color: #444;
+    margin-bottom: 30px;
     font-family: sans-serif;
-    text-align: left;
-    margin: 0;
 }
 
 .buttons-row {
@@ -310,6 +309,7 @@ h3 {
     padding: 14px 16px;
     margin: 0 0 12px;
     box-sizing: border-box;
+    display: block;
 }
 
 .support-benefits p {
@@ -376,12 +376,22 @@ h3 {
 .support-drawer .input-wrapper.required::after {
     content: "*";
     position: absolute;
-    right: 13px;
-    top: 50%;
+    right: 16px;
+    top: 60%;
     transform: translateY(-50%);
-    color: #999;
-    font-family: sans-serif;
-    font-size: 20px;
+    color: #999999;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+.support-drawer .input-wrapper.optional-required::after {
+    content: "*";
+    position: absolute;
+    right: 16px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 25px;
     pointer-events: none;
 }
 
@@ -398,8 +408,7 @@ h3 {
     width: 0;
 }
 
-/* Remove unnecessary spacing around fields */
-
+/* remove unnecessary spacing around fields */
 .support-drawer .columnpls {
     margin: 0;
 }
@@ -417,6 +426,10 @@ h3 {
     font-style: italic;
     font-size: 13px;
     color: var(--red);
+}
+
+.customAmountInput {
+    display: block;
 }
 
 .support-drawer__submit {

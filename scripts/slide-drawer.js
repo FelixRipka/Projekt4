@@ -1,20 +1,42 @@
 // "STØT" drawer
+const support = document.getElementById("supportDrawer");
+const supportBtn = document.querySelector(".support-btn");
+const supportClose = document.getElementById("supportDrawerClose");
 
-const drawer = document.getElementById("supportDrawer");
-const drawerBtn = document.querySelector(".support-btn");
-const drawerClose = document.getElementById("supportDrawerClose");
-
-drawerBtn.addEventListener("click", (e) => {
+supportBtn.addEventListener("click", (e) => {
     e.preventDefault(); 
-    drawer.classList.toggle("open");
+    support.classList.toggle("open");
 });
 
-drawerClose.addEventListener("click", () => {
-    drawer.classList.remove("open");
+supportClose.addEventListener("click", () => {
+    support.classList.remove("open");
 });
+
+// "STØT" interactivity
+const customAmountInputSupport = document.getElementById(".customAmount")
+const firstNameInputSupport = document.getElementById("firstNameInputSupport");
+const lastNameInputSupport = document.getElementById("lastNameInputSupport");
+const emailInputSupport = document.getElementById("emailInputSupport");
+
+const customAmountInput = document.querySelector(".customAmountInput");
+const customAmountErrorSupport = document.querySelector(".missing-input__customAmount");
+const firstNameErrorSupport = document.querySelector(".missing-input__firstnameSupport");
+const lastNameErrorSupport = document.querySelector(".missing-input__lastnameSupport");
+const emailErrorSupport = document.querySelector(".missing-input__emailSupport");
+
+const supportBenefits = document.querySelector(".support-benefits");
+
+
+// hide customAmount, support-benefits and error messages by default
+supportBenefits.style.display = "none";
+customAmountInput.style.display = "none";
+customAmountErrorSupport.style.display = "none";
+
+firstNameErrorSupport.style.display = "none";
+lastNameErrorSupport.style.display = "none";
+emailErrorSupport.style.display = "none";
 
 // "SKRIV UNDER FOR GRISENE" drawer
-
 const sign = document.getElementById("signDrawer");
 const signClose = document.getElementById("signDrawerClose");
 
@@ -32,11 +54,10 @@ signClose.addEventListener("click", () => {
     sign.classList.remove("open");
 });
 
-
 // "SKRIV UNDER FOR GRISENE" counter
-const firstNameInput = document.getElementById("firstNameInput");
-const lastNameInput = document.getElementById("lastNameInput");
-const emailInput = document.getElementById("emailInput");
+const firstNameInputSign = document.getElementById("firstNameInputSign");
+const lastNameInputSign = document.getElementById("lastNameInputSign");
+const emailInputSign = document.getElementById("emailInputSign");
 const signCounter = document.getElementById("signCounter");
 
 const firstNameErrorSign = document.querySelector(".missing-input__firstnameSign");
@@ -56,21 +77,21 @@ signForm.addEventListener("submit", function(e) {
     
     let isValid = true;
 
-    if (firstNameInput.value.trim() === "") {
+    if (firstNameInputSign.value.trim() === "") {
         firstNameErrorSign.style.display = "block";
         isValid = false;
     } else {
         firstNameErrorSign.style.display = "none";
     }
 
-    if (lastNameInput.value.trim() === "") {
+    if (lastNameInputSign.value.trim() === "") {
         lastNameErrorSign.style.display = "block";
         isValid = false;
     } else {
         lastNameErrorSign.style.display = "none";
     }
 
-    if (emailInput.value.trim() === "") {
+    if (emailInputSign.value.trim() === "") {
         emailErrorSign.style.display = "block";
         isValid = false;
     } else {
