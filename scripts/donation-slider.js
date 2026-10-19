@@ -5,34 +5,34 @@ const impactLevels = [
 		// minimum er den laveste donation, hvor denne tekst skal vises.
 		minimum: 50,
 		// Teksten før "ELLER" i HTML'en.
-		equivalent: "EN KOP KAFFE",
+		equivalent: "En kop kaffe",
 		// Teksten efter "ELLER". <br> laver et linjeskift, når teksten indsættes som HTML.
-		description: "5 DAGES MAD TIL EN HUND<br>PÅ ET DANSK INTERNAT",
+		description: "En dags sund mad<br>til et reddet landbrugsdyr",
 	},
 	{
 		minimum: 100,
-		equivalent: "EN GOD GÅTUR",
-		description: "MAD TIL EN HUND<br>I FLERE DAGE",
+		equivalent: "En tur i biograffen",
+		description: "En lun og tryg halmrede<br>til en dyrefamilie",
 	},
     	{
 		minimum: 150,
-		equivalent: "EN GOD GÅTUR",
-		description: "MAD TIL EN HUND<br>I FLERE DAGE",
+		equivalent: "Et streaming abonnement i en måned",
+		description: "Friske råvarer<br>og aktivering i indhegningen",
 	},
 	{
 		minimum: 250,
-		equivalent: "EN TRYGT HJEM",
-		description: "PLEJE OG OMSORG<br>TIL EN INTERNATHUND",
+		equivalent: "En ny t-shirt",
+		description: "Et professionelt sundhedstjek af dyrlægen",
 	},
     	{
 		minimum: 300,
-		equivalent: "EN GOD GÅTUR",
-		description: "MAD TIL EN HUND<br>I FLERE DAGE",
+		equivalent: "En flaske vin",
+		description: "Opbygning af uderum med<br>mudderbad og skygge",
 	},
 	{
 		minimum: 400,
-		equivalent: "En tur på Mac Donalds med familien",
-		description: "Hjælp en hund<br>videre til en kærligt hjem",
+		equivalent: "en tur på restaurant",
+		description: "Vacciner og parasitbehandling<br>til en hel flok",
 	},
 ];
 
