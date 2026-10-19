@@ -6,14 +6,16 @@
     <title>Dyrenes Beskyttelse</title>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/grise.css">
     <link rel="stylesheet" href="stylesheet/quiz.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
     <script src="scripts/quizzez/kylling-quiz.js" defer></script>
     <script src="scripts/quizzez/quiz-runtime.js" defer></script>
+    <script src="scripts/slide-drawer.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -62,7 +64,160 @@
                     <li>Kyllingen skal vokse naturligt, så både ben og hjerte kan følge med.</li>
                 </ul>
                 <br>
-                <button class="sign-btn-other" type="button">SKRIV UNDER FOR KYLLINGERNE HER</button>
+                <button class="sign-btn" type="button">SKRIV UNDER FOR KYLLINGERNE HER</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="support-drawer" id="supportDrawer">
+                <div class="support-drawer__inner">
+                    <button class="support-drawer__close" id="supportDrawerClose">&#10799;</button>
+                    
+                    <form id="supportForm">
+                        <h2>Hvordan vil du støtte?</h2>
+
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button">Bliv Medlem</button>
+                            <button type="button" class="donation-button">Støt én gang</button>
+                        </div>
+
+                        <div class="support-benefits">
+                            <div>
+                                <p>Bliv medlem og få:</p>
+                                <ul>
+                                    <li> medlemsblad fire gange om året</li>
+                                    <li> invitationer til events</li>
+                                    <li> eksklusive rabatter</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2>Vælg <span id="onceOrMonth"></span></h2>
+
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button" id="donationAmount1"></button>
+                            <button type="button" class="donation-button" id="donationAmount2"></button>
+                            <button type="button" class="donation-button" id="donationAmount3"></button>
+                            <button type="button" class="donation-button">Andet</button>
+                        </div>
+
+                        <div class="columnpls">
+                            <div class="input-wrapper optional-required">
+                                <input type="text" class="customAmountInput" id="customAmount" placeholder="Beløb i kr."/>
+                            </div>
+                            <div class="missing-input__customAmount">Indtast venligst et gyldigt beløb</div>
+                        </div>
+
+                        <h2>Om dig</h2>
+
+                        <div class="inputfield-row">
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="firstNameInputSupport" placeholder="Fornavn"/>
+                                </div>
+                                <div class="missing-input__firstnameSupport">Indtast venligst et fornavn</div>
+                            </div>
+
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="lastNameInputSupport" placeholder="Efternavn"/>
+                                </div>
+                                <div class="missing-input__lastnameSupport">Indtast venligst et efternavn</div>
+                            </div>
+                        </div>
+
+                        <div class="columnpls">
+                            <div class="input-wrapper required">
+                                <input type="text" id="emailInputSupport" placeholder="E-mail (bruges til kvittering)"/>
+                            </div>
+                            <div class="missing-input__emailSupport">Indtast venligst en gyldig email</div>
+                        </div>
+
+                        <button class="support-drawer__submit" type="submit">STØT DYRENE</button>
+
+                        <div class="checkmark-desc__box">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                <strong>Tilmeld dig vores nyhedsbrev</strong>
+                            </p>
+                        </div>
+                    
+                        <div class="privacypolicy-text">
+                            <p>
+                                Når du udfylder denne formular, siger du samtidig ja til vores betingelser. Læs vores <strong>datapolitik her.</strong>
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sign-drawer" id="signDrawer">
+                <div class="sign-drawer__inner">
+                    <button class="sign-drawer__close" id="signDrawerClose">&#10799;</button>
+
+                    <h2 id="signCounter">0</h2>
+                    <p>
+                        personer har allerede skrevet under.
+                    <br>
+                        <span class="accentuated">
+                            Nu er det din tur!
+                        </span>
+                    </p>
+
+                    <form id="signForm">
+                        <div class="inputfield-row">
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="firstNameInputSign" placeholder="Fornavn"/>
+                                </div>
+                                <div class="missing-input__firstnameSign">Indtast venligst et fornavn</div>
+                            </div>
+
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="lastNameInputSign" placeholder="Efternavn"/>
+                                </div>
+                                <div class="missing-input__lastnameSign">Indtast venligst et efternavn</div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Telefon"/>
+                        </div>
+                        
+                        <div class="columnpls">
+                            <div class="input-wrapper required">
+                                <input type="text" id="emailInputSign" placeholder="E-mail (bruges til kvittering)"/>
+                            </div>
+                            <div class="missing-input__emailSign">Indtast venligst en gyldig email</div>
+                        </div>
+
+                        <button class="sign-drawer__submit" type="submit">SKRIV UNDER NU</button>
+                        
+                        <div class="checkmark-desc__box">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                <strong>Ja tak, jeg vil gerne holdes opdateret om forholdene for danske kyllinger og kampen for at skabe bedre forhold for landbrugsdyrene. Jeg modtager samtidig Dyrenes Beskyttelses nyhedsbreve.</strong>
+                            </p>
+                        </div>
+                    
+                        <div class="privacypolicy-text">
+                            <p>
+                                Når jeg skriver under, accepterer jeg hermed Dyrenes Beskyttelses <strong>privatlivspolitik</strong>. Hvis jeg har udfyldt mit telefonnummer, må I gerne kontakte mig telefonisk med tilbud om støtte.
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </section>
 

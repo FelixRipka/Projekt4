@@ -474,9 +474,17 @@ h3 {
 .checkmark-desc__box {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     margin: 10px 0 0;
+    text-align: left;
+}
+
+.checkmark-desc__box p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
 }
 
 
@@ -610,7 +618,7 @@ h3 {
     
 }
 
-.sign-btn-other{
+.sign-btn {
     border:none;
     color:#fff;
     background:var(--button);

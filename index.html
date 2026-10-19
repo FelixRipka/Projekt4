@@ -63,26 +63,86 @@
             <div class="support-drawer" id="supportDrawer">
                 <div class="support-drawer__inner">
                     <button class="support-drawer__close" id="supportDrawerClose">&#10799;</button>
+                    
+                    <form id="supportForm">
+                        <h2>Hvordan vil du støtte?</h2>
 
-                    <h2>Hvordan vil du støtte?</h2>
-                    <p>poop</p>
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button">Bliv Medlem</button>
+                            <button type="button" class="donation-button">Støt én gang</button>
+                        </div>
 
-                    <form>
-                        <label>Navn:</label>
-                        <input type="text" />
+                        <div class="support-benefits">
+                            <div>
+                                <p>Bliv medlem og få:</p>
+                                <ul>
+                                    <li> medlemsblad fire gange om året</li>
+                                    <li> invitationer til events</li>
+                                    <li> eksklusive rabatter</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <label>Telefon:</label>
-                        <input type="text" />
+                        <h2>Vælg <span id="onceOrMonth"></span></h2>
 
-                        <label>E-mail:</label>
-                        <input type="email" />
+                        <div class="buttons-row">
+                            <button type="button" class="donation-button" id="donationAmount1"></button>
+                            <button type="button" class="donation-button" id="donationAmount2"></button>
+                            <button type="button" class="donation-button" id="donationAmount3"></button>
+                            <button type="button" class="donation-button">Andet</button>
+                        </div>
 
-                        <label>Vejnavn og husnummer:</label>
-                        <input type="text" />
+                        <div class="columnpls">
+                            <div class="input-wrapper optional-required">
+                                <input type="text" class="customAmountInput" id="customAmount" placeholder="Beløb i kr."/>
+                            </div>
+                            <div class="missing-input__customAmount">Indtast venligst et gyldigt beløb</div>
+                        </div>
 
-                        <button class="support-drawer__submit">BESTIL SALGSVURDERING</button>
+                        <h2>Om dig</h2>
+
+                        <div class="inputfield-row">
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="firstNameInputSupport" placeholder="Fornavn"/>
+                                </div>
+                                <div class="missing-input__firstnameSupport">Indtast venligst et fornavn</div>
+                            </div>
+
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="lastNameInputSupport" placeholder="Efternavn"/>
+                                </div>
+                                <div class="missing-input__lastnameSupport">Indtast venligst et efternavn</div>
+                            </div>
+                        </div>
+
+                        <div class="columnpls">
+                            <div class="input-wrapper required">
+                                <input type="text" id="emailInputSupport" placeholder="E-mail (bruges til kvittering)"/>
+                            </div>
+                            <div class="missing-input__emailSupport">Indtast venligst en gyldig email</div>
+                        </div>
+
+                        <button class="support-drawer__submit" type="submit">STØT DYRENE</button>
+
+                        <div class="checkmark-desc__box">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                <strong>Tilmeld dig vores nyhedsbrev</strong>
+                            </p>
+                        </div>
+                    
+                        <div class="privacypolicy-text">
+                            <p>
+                                Når du udfylder denne formular, siger du samtidig ja til vores betingelser. Læs vores <strong>datapolitik her.</strong>
+                            </p>
+                        </div>
+
                     </form>
-
                 </div>
             </div>
         </section>
