@@ -152,7 +152,7 @@
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 	.issue-carousel > .donation-widget::before {
 		inset-inline: -24px;
 	}
