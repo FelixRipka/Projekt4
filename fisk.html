@@ -15,15 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
     <script src="scripts/quizzez/fisk-quiz.js" defer></script>
     <script src="scripts/quizzez/quiz-runtime.js" defer></script>
+    <script src="scripts/burgermenu.js" defer></script>
     <script src="scripts/slide-drawer.js" defer></script>
 </head>
 <body>
     <header class="navbar">
-        <a href="#" class="logo" aria-label="Forside">
+        <a href="index.html" class="logo" aria-label="Forside">
             <img src="images/logoet.png" alt="Dyrenes Beskyttelse logo">
         </a>
 
-        <nav aria-label="Hovednavigation">
+        <button class="nav-toggle" type="button" aria-label="Åbn navigation" aria-expanded="false" aria-controls="primaryNavigation">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="primaryNavigation" aria-label="Hovednavigation">
             <ul class="nav-links">
                 <li><a href="#">Dyr i nød</a></li>
                 <li><a href="#">Adoption</a></li>
@@ -54,7 +58,7 @@
         </section>
         <section class="content-section">
             <div class="content-section-inner">
-                <h1>HVAD ER AKVAKULTUR?</h1>
+                <h1>Hvad er akvakultur?</h1>
                 <p>Akvakultur betyder opdræt af fisk, skaldyr og andre organismer i vand. Fisk udgør ifølge Fiskeristyrelsen 38.530 tons om året (79 procent), muslinger 10.227 tons om året (21 procent) og havtang 8 tons om året (0,02 procent). Fiskene opdrættes på mange forskellige måder; i havet i netbure, på land i damme, og indendørs i bassiner.</p>
             <br>
                 <button class="sign-btn" type="button">SKRIV UNDER FOR FISKENE HER</button>
@@ -216,12 +220,12 @@
 
         <section class="bodytext-section">
             <div class="bodytext-section-inner fish-bodytext">
-                <h1>STOP FORSKÆLSBEHANDLING</h1>
+                <h1>Stop forskælsbehandling</h1>
                 <p>Fisk er sansende væsener, som kan føle smerte og stress. Derfor skal staten naturligvis føre tilsyn med, at fisk, der holdes i akvakultur, har gode dyrevelfærdsvilkår. Velfærdstilsyn skal være uanmeldt og risikobaseret.</p>
                 <p>Fisk, der opdrættes, har ikke de samme rettigheder som andre dyr, der bruges i fødevareproduktionen. Hvor andre husdyr, for eksempel køer, grise og kyllinger, beskyttes af et lovpligtigt tilsyn med deres velfærd, er der ingen krav om tilsyn med fiskenes velfærd. Der er heller ingen specifikke krav til, hvor meget plads den enkelte fisk skal have, eller hvordan vandkvaliteten skal være.</p>
                 <p>Dyrenes Beskyttelse mener, at det er uforsvarligt, at man i Danmark har ca. 50 millioner fisk i hav- eller dambrug, uden at vi som samfund tager ansvar for deres velfærd.</p>
 
-                <h1>FAKTA OM DANSK AKVAKULTUR</h1>
+                <h1>Fakta om dansk akvakultur</h1>
                 <ul class="bullet">
                     <li>Den danske produktion er på ca. 45.500 ton fisk pr. år.</li>
                     <li>De fisk, der oftest opdrættes i Danmark, er ørred og laks.</li>
@@ -236,7 +240,7 @@
                     <li>Der er ingen lovgivning om indretningen af de beholdere, netbure og damme, som fiskene opdrættes i.</li>
                 </ul>
 
-                <h2>NY STRATEGI FOR AKVAKULTUR SKAL FØLGES TÆT</h2>
+                <h2>Ny strategi for akvakultur skal følges tæt</h2>
                 <p>Danmark fik i oktober 2022 en ny strategi for akvakultur. Baggrunden for strategien er, at alle EU's medlemslande i 2022 skal formulere nationale strategier for udviklingen i akvakultursektoren.</p>
                 <p>Dyrenes Beskyttelse er glade for, at der i den nye strategi er kommet mere fokus på dyrevelfærd.</p>
                 <p>Strategien slår fast:</p>

@@ -704,6 +704,115 @@ h3 {
     margin:8px 0;
 }
 
+.nav-toggle{
+    display:none;
+}
+
+@media (max-width: 1200px){
+    body{
+        padding-top:76px;
+    }
+
+    .navbar{
+        height:76px;
+        padding:0 32px;
+    }
+
+    .nav-toggle{
+        display:flex;
+        width:44px;
+        height:44px;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:5px;
+        border:0;
+        background:transparent;
+        cursor:pointer;
+    }
+
+    .nav-toggle span{
+        display:block;
+        width:24px;
+        height:2px;
+        background:#000;
+        transition:transform 160ms ease, opacity 160ms ease;
+    }
+
+    .navbar--menu-open .nav-toggle span:first-child{
+        transform:translateY(7px) rotate(45deg);
+    }
+
+    .navbar--menu-open .nav-toggle span:nth-child(2){
+        opacity:0;
+    }
+
+    .navbar--menu-open .nav-toggle span:last-child{
+        transform:translateY(-7px) rotate(-45deg);
+    }
+
+    .navbar nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        display:none;
+        padding:8px 24px 20px;
+        background:var(--bg);
+        box-shadow:0 8px 12px rgb(0 0 0 / 12%);
+    }
+
+    .navbar--menu-open nav{
+        display:block;
+    }
+
+    .nav-links{
+        align-items:stretch;
+        flex-direction:column;
+        gap:0;
+    }
+
+    .nav-links li{
+        margin:0;
+        border-top:1px solid rgb(0 0 0 / 12%);
+    }
+
+    .nav-links a{
+        display:block;
+        padding:14px 4px;
+        font-size:16px;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar{
+        padding:0 16px;
+    }
+
+    .logo img{
+        max-width:44vw;
+        height:auto;
+        max-height:36px;
+    }
+
+    .nav-actions{
+        gap:0;
+    }
+
+    .support-btn{
+        padding:10px 14px;
+        font-size:14px;
+    }
+
+    .language-switch{
+        display:none;
+    }
+
+    .nav-toggle{
+        width:40px;
+    }
+}
+
 @media (max-width: 900px) {
     .fish-bodytext .fish-info-box {
         max-width:100%;
@@ -1121,7 +1230,7 @@ h3 {
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 1200px){
     .hero{
         flex-direction:column;
         height:auto;

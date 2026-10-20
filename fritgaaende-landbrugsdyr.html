@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/fritgaaende.css">
     <script src="scripts/fritgaaende.js" defer></script>
+    <script src="scripts/burgermenu.js" defer></script>
     <script src="scripts/slide-drawer.js" defer></script>
     
 
@@ -18,11 +19,14 @@
 </head>
 <body>
     <header class="navbar">
-        <a href="#" class="logo" aria-label="Forside">
+        <a href="index.html" class="logo" aria-label="Forside">
             <img src="images/logoet.png" alt="Dyrenes Beskyttelse logo">
         </a>
 
-        <nav aria-label="Hovednavigation">
+        <button class="nav-toggle" type="button" aria-label="Åbn navigation" aria-expanded="false" aria-controls="primaryNavigation">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="primaryNavigation" aria-label="Hovednavigation">
             <ul class="nav-links">
                 <li><a href="#">Dyr i nød</a></li>
                 <li><a href="#">Adoption</a></li>
