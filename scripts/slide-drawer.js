@@ -1,7 +1,7 @@
 // "STØT" drawer
 const support = document.getElementById("supportDrawer");
 if (support) {
-    const supportBtns = document.querySelectorAll(".support-btn");
+    const supportBtns = document.querySelectorAll(".support-btn, .donation__button");
     const supportClose = document.getElementById("supportDrawerClose");
     const supportForm = document.getElementById("supportForm");
 
