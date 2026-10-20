@@ -587,7 +587,7 @@ h3 {
 .content-section{
     background:var(--bg);
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .content-section-inner{
@@ -1112,7 +1112,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .fakestagram-post {
