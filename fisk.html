@@ -6,6 +6,7 @@
     <title>Dyrenes Beskyttelse</title>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/grise.css">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/quiz.css">
 
@@ -148,6 +149,71 @@
             </div>
         </section>
 
+        <section>
+            <div class="sign-drawer" id="signDrawer">
+                <div class="sign-drawer__inner">
+                    <button class="sign-drawer__close" id="signDrawerClose">&#10799;</button>
+
+                    <h2 id="signCounter">0</h2>
+                    <p>
+                        personer har allerede skrevet under.
+                    <br>
+                        <span class="accentuated">
+                            Nu er det din tur!
+                        </span>
+                    </p>
+
+                    <form id="signForm">
+                        <div class="inputfield-row">
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="firstNameInputSign" placeholder="Fornavn"/>
+                                </div>
+                                <div class="missing-input__firstnameSign">Indtast venligst et fornavn</div>
+                            </div>
+
+                            <div class="columnpls">
+                                <div class="input-wrapper required">
+                                    <input type="text" id="lastNameInputSign" placeholder="Efternavn"/>
+                                </div>
+                                <div class="missing-input__lastnameSign">Indtast venligst et efternavn</div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Telefon"/>
+                        </div>
+                        
+                        <div class="columnpls">
+                            <div class="input-wrapper required">
+                                <input type="text" id="emailInputSign" placeholder="E-mail (bruges til kvittering)"/>
+                            </div>
+                            <div class="missing-input__emailSign">Indtast venligst en gyldig email</div>
+                        </div>
+
+                        <button class="sign-drawer__submit" type="submit">SKRIV UNDER NU</button>
+                        
+                        <div class="checkmark-desc__box">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                <strong>Ja tak, jeg vil gerne holdes opdateret om forholdene for fisk og kampen for at skabe bedre forhold for havdyr. Jeg modtager samtidig Dyrenes Beskyttelses nyhedsbreve.</strong>
+                            </p>
+                        </div>
+                    
+                        <div class="privacypolicy-text">
+                            <p>
+                                Når jeg skriver under, accepterer jeg hermed Dyrenes Beskyttelses <strong>privatlivspolitik</strong>. Hvis jeg har udfyldt mit telefonnummer, må I gerne kontakte mig telefonisk med tilbud om støtte.
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <section class="bodytext-section">
             <div class="bodytext-section-inner fish-bodytext">
                 <h1>STOP FORSKÆLSBEHANDLING</h1>
@@ -162,6 +228,7 @@
                     <li>Der findes ingen tilsyn med fiskenes velfærd i akvakulturen.</li>
                 </ul>
 
+                <br>
                 <p>For de fisk, der ikke er økologiske:</p>
                 <ul class="bullet">
                     <li>Der er ingen lovgivning om, hvor tæt fisk må opdrættes i akvakulturen.</li>
