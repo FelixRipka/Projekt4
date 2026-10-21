@@ -1,8 +1,8 @@
 window.animalQuizConfig = {
     containerId: "transport-quiz",
     completionHeading: "Vil du hjælpe dyrene til bedre vilkår?",
-    completionButtonClass: "transp-top-btn",
-    completionButtonText: "Skriv under her ⟶",
+    completionButtonClass: "sign-btn",
+    completionButtonText: "SKRIV UNDER FOR GRISETRANSPORT HER",
     questions: [
         {
             question: "Hvor længe bør en dyretransport ifølge Dyrenes Beskyttelse højst vare?",

@@ -10,7 +10,7 @@
 	container-type: inline-size;
 	color-scheme: light;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	color: #080808;
+	color: #141414;
 	font-synthesis: none;
 }
 
@@ -23,7 +23,7 @@
 	position: absolute;
 	z-index: -1;
 	inset: 0 -48px;
-	background: #f4f0e7;
+	background: var(--bg);
 	content: "";
 }
 
@@ -47,7 +47,7 @@
 
 .donation-widget .donation__amount {
 	margin-bottom: clamp(16px, 3cqi, 24px);
-	color: #ff4b3e;
+	color: var(--button);
 	font-size: clamp(40px, 6cqi, 72px);
 	line-height: 1;
 }
@@ -59,7 +59,7 @@
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: 999px;
-	background: #ff4b3e;
+	background: var(--button);
 	cursor: pointer;
 }
 
@@ -70,7 +70,7 @@
 	-webkit-appearance: none;
 	border: 0;
 	border-radius: 50%;
-	background: #050505;
+	background: #141414;
 }
 
 .donation-widget .donation__slider::-moz-range-thumb {
@@ -78,11 +78,11 @@
 	height: 32px;
 	border: 0;
 	border-radius: 50%;
-	background: #050505;
+	background: #141414;
 }
 
 .donation-widget .donation__slider:focus-visible {
-	outline: 3px solid #080808;
+	outline: 3px solid #141414;
 	outline-offset: 8px;
 }
 
@@ -91,8 +91,8 @@
 	min-height: clamp(60px, 9cqi, 76px);
 	border: 0;
 	border-radius: 24px;
-	background: #920e00;
-	color: #fff;
+	background: #9D0000;
+	color: #fafafa;
 	font: inherit;
 	font-size: clamp(34px, 5cqi, 56px);
 	line-height: 1;
@@ -100,11 +100,11 @@
 }
 
 .donation-widget .donation__button:hover {
-	background: #760b00;
+	background: #7E0C00;
 }
 
 .donation-widget .donation__button:focus-visible {
-	outline: 3px solid #080808;
+	outline: 3px solid #141414;
 	outline-offset: 4px;
 }
 
@@ -122,7 +122,7 @@
 
 .donation-widget .donation__separator {
 	margin: clamp(12px, 2cqi, 18px) 0;
-	color: #ff4b3e;
+	color: var(--button);
 }
 
 .donation-widget .visually-hidden {
