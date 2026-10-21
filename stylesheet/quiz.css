@@ -122,6 +122,10 @@
     color: #fafafa;
 }
 
+.animal-quiz__fact-text {
+    color: #fafafa;
+}
+
 .animal-quiz__info-box h3 {
     margin: 0 0 10px;
     color: inherit;
@@ -132,7 +136,6 @@
 .animal-quiz__info-box p {
     font-size: 0.9rem;
     line-height: 1.55;
-    color: #fafafa;
 }
 
 .animal-quiz__complete-button {
