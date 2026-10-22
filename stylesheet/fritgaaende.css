@@ -2,8 +2,8 @@
     display: flex;
     justify-self: right;
     width: 150px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #fafafa;
+    color: #fafafa;
     background:transparent;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -20,7 +20,7 @@
   width: 60px;
   height: 60px;
   padding: 0px;
-  border: 1px solid black;
+  border: 1px solid #141414;
   z-index: 99;
 }
 
@@ -28,7 +28,7 @@
   width: 60px;
   height: 60px;
   padding: 0px;
-  border: 1px solid black;
+  border: 1px solid #141414;
   z-index: 99;
 }
 
@@ -36,7 +36,7 @@
   width: 60px;
   height: 60px;
   padding: 0px;
-  border: 1px solid black;
+  border: 1px solid #141414;
   z-index: 99;
 }
 
@@ -44,7 +44,7 @@
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
     
 }
 
@@ -52,49 +52,49 @@
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div3{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div4{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div6{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div7{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div8{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #div9{
     width: 60px;
     height: 60px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed #141414;
 }
 
 #img1{

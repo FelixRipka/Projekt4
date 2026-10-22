@@ -1,8 +1,8 @@
 window.animalQuizConfig = {
     containerId: "fish-quiz",
     completionHeading: "Vil du hjælpe fiskene til bedre vilkår?",
-    completionButtonClass: "footer-top-btn",
-    completionButtonText: "TILMELD ⟶",
+    completionButtonClass: "sign-btn",
+    completionButtonText: "SKRIV UNDER FOR FISKENE HER",
     questions: [
         {
             question: "Hvad betyder akvakultur?",

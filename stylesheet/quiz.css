@@ -8,8 +8,8 @@
     max-width: 920px;
     margin: 0 auto;
     padding: clamp(20px, 4vw, 40px);
-    background: var(--bg, #f5f0e6);
-    color: #111;
+    background: var(--bg);
+    color: #141414;
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
     font-family: Arial, sans-serif;
 }
@@ -40,7 +40,7 @@
     margin-bottom: 10px;
     padding: 14px 18px;
     border: 2px solid transparent;
-    background: #f5f5f5;
+    background: #fafafa;
     color: inherit;
     cursor: pointer;
     font: inherit;
@@ -56,7 +56,7 @@
 .animal-quiz__answer:focus-visible,
 .animal-quiz__next:focus-visible,
 .animal-quiz__complete-button:focus-visible {
-    outline: 3px solid var(--button, #ff4f3e);
+    outline: 3px solid var(--button);
     outline-offset: 3px;
 }
 
@@ -68,40 +68,33 @@
     flex: 0 0 24px;
     width: 24px;
     height: 24px;
-    border: 2px solid #222;
+    border: 2px solid #141414;
     border-radius: 50%;
 }
 
 .animal-quiz__answer.correct {
-    border-color: #80c36a;
-    background: #b7e59f;
+    border-color: #5FBA3A;
+    background: #C7F6AA;
 }
 
-.animal-quiz__answer.selected.correct .animal-quiz__answer-circle {
-    background: #80c36a;
-}
-
+.animal-quiz__answer.selected.correct .animal-quiz__answer-circle,
 .animal-quiz__answer.selected.wrong .animal-quiz__answer-circle {
-    background: #ff5a45;
+    background: #FF4F3E;
 }
 
 .animal-quiz__answer.wrong {
-    border-color: #d28c5f;
-    background: #ebc0a6;
+    border-color: #BA5F5A;
+    background: #F6C7AA;
 }
 
 .animal-quiz__next {
     margin-top: 12px;
     padding: 12px 26px;
-    border: 2px solid #222;
-    background: #fff;
+    border: 2px solid #141414;
+    background: #fafafa;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: bold;
-}
-
-.animal-quiz__next:hover {
-    background: #f2f2f2;
 }
 
 .animal-quiz__hidden {
@@ -121,12 +114,16 @@
 }
 
 .animal-quiz__result-box {
-    background: #efefef;
+    background: #fafafa;
 }
 
 .animal-quiz__info-box {
-    background: #ff533d;
-    color: #fff;
+    background: #FF4F3E;
+    color: #fafafa;
+}
+
+.animal-quiz__fact-text {
+    color: #fafafa;
 }
 
 .animal-quiz__info-box h3 {
