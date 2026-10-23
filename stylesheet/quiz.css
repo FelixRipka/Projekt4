@@ -77,7 +77,10 @@
     background: #C7F6AA;
 }
 
-.animal-quiz__answer.selected.correct .animal-quiz__answer-circle,
+.animal-quiz__answer.selected.correct .animal-quiz__answer-circle {
+    background: #5FBA3A;
+}
+
 .animal-quiz__answer.selected.wrong .animal-quiz__answer-circle {
     background: #FF4F3E;
 }
